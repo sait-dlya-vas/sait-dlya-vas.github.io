@@ -1,0 +1,6 @@
+*.md
+vitrina.json
+_foto/
+_tools/
+lab/
+assets/*photolab*
