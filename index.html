@@ -170,7 +170,7 @@ footer{padding:26px 0 40px;color:var(--ink-3);font-size:14px;display:flex;flex-w
   </section>
 
   <section class="block" id="works">
-    <div class="block-head reveal"><div><div class="eyebrow">Работы</div><h2>Сайты, которые я сделал</h2></div><p id="worksNote"></p></div>
+    <div class="block-head reveal"><div><div class="eyebrow">Работы</div><h2>Сайты, которые я сделала</h2></div><p id="worksNote"></p></div>
     <div id="cases"></div>
   </section>
 
@@ -264,7 +264,7 @@ footer{padding:26px 0 40px;color:var(--ink-3);font-size:14px;display:flex;flex-w
   if (withShots.length) fan.innerHTML = withShots.slice(0, 3).map((c, i) => phone(c, 20 + i * 4)).join('');
   else { fan.classList.add('empty'); fan.textContent = 'Здесь появятся ваши работы: скажите Клоду «добавь в витрину сайт …»'; }
 
-  const story = (c) => [['Задача', c.task], ['Что сделал', c.did], ['Результат', c.result]].filter(([, v]) => v).map(([k, v]) => `<li><b>${k}</b><span>${esc(v)}</span></li>`).join('');
+  const story = (c) => [['Задача', c.task], ['Что сделала', c.did], ['Результат', c.result]].filter(([, v]) => v).map(([k, v]) => `<li><b>${k}</b><span>${esc(v)}</span></li>`).join('');
   $('cases').innerHTML = cases.map((c, i) => `
     <article class="case reveal">
       <div class="devices${c.desktop ? '' : ' solo'}">
